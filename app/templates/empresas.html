@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Empresas</title>
+{% endblock %}
+
+{% block container %}
+<div class="container">
+    <div class="row justify-content-center titulo-row2">
+        <div class="p-5 titulo-bg">
+            <h1 class="mt-5 display-3">Empresas</h1>
+        </div>
+    </div>
+
+    <form method="post" action="/api_call">
+        <div class="row" id="select-row">
+                <div class="col d-flex justify-content-center">
+                    <span class="label-empresas">Adicione uma empresa:</span>
+                </div>
+            
+                <div class="col d-flex justify-content-center">
+                    <select name="empresas" id="empresas" class="select-empresas pl-3">
+                        <option value="PETR4.SA">Petrobras</option>
+                        <option value="ITUB4.SAO">Itaú</option>
+                        <option value="VALE3.SAO">Vale</option>
+                        <option value="AAPL">Apple</option>
+                        <option value="MSFT">Microsoft</option>
+                        <option value="IBM">IBM</option>
+                        <option value="INTC">Intel</option>
+                        <option value="ADBE">Adobe</option>
+                        <option value="ORCL">Oracle</option>
+                        <option value="CSCO">Cisco</option>
+                    </select>
+                </div>
+
+                <div class="col d-flex justify-content-center">
+                    <input type="submit" value="Adicionar" class="botao-pesquisar-empresa">
+                </div>
+        </div>
+    </form>
+
+    <div class="row mt-5">
+        <div class="col">
+            <table class="table tabela-empresas">
+                <thead>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Cotação</th>
+                        <th><a href="/delete_all">Excluir todas</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for empresa in empresa_db %}
+                        <tr>
+                            <td>{{ empresa.name }}</td>
+                            <td class="td-cotacao">{{ empresa.value }}</td>
+                            <td class="td-delete"><a href="/delete/{{empresa.id}}">Excluir</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row botao-voltar-row">
+        <div><a class="botao-voltar" href="/">VOLTAR</a></div>
+    </div>
+</div>
+{% endblock %}

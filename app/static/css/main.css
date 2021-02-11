@@ -1,0 +1,218 @@
+/*
+=== PADRÃO ===
+*/
+body {
+    font-family: monospace;
+    background: #040d15;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+=== TÍTULO ===
+*/
+.titulo-bg {
+    background-color: #EABF70;
+    color: #35240A;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #35240A;
+    border-top: none;
+}
+
+.titulo-row {
+    margin-bottom: 150px;
+}
+
+.titulo-row2 {
+    margin-bottom: 100px;
+}
+
+/*
+=== CORPO BOVESPA ===
+*/
+#app {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+#app p {
+    color: green;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#app span {
+    font-size: 2em;
+    color: white;
+}
+
+.databox {
+    border-bottom: 1px dashed white;
+    padding: 5px;
+}
+
+
+.texto-info {
+    font-size: 2em;
+    color: white;
+}
+
+.container-info {
+    background: #01060c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*
+=== CORPO EMPRESAS ===
+*/
+.label-empresas {
+    color: white;
+    line-height: 70px;
+}
+
+#select-row {
+    height: 70px;
+    background: #35240a69;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.select-empresas {
+    width: 80%;
+    height: 70px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+select.select-empresas:hover {
+    background: #EABF70;
+    color: #35240A;
+    border: 1px solid #35240A;
+    transition: 0.8s;
+}
+
+.botao-pesquisar-empresa {
+    width: 60%;
+    background: #EABF70;
+    color: #35240A;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.botao-pesquisar-empresa:hover{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    transition: 0.8s;
+}
+
+.tabela-empresas{
+    background-color: #01060c;
+    text-align: center;
+    font-size: 21px;
+    color: #EABF70;
+}
+
+.tabela-empresas thead{
+    color: white;
+}
+
+.td-cotacao{
+    color: green;
+}
+
+.td-delete a {
+    color: red;
+}
+
+/*
+=== BOTÕES HOME ===
+*/
+.botao{
+    border: 1px solid white;
+    color: white;
+    background: none;
+    padding: 20px;
+    font-size: 2.5em;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao:hover {
+    color: #040d15;
+    text-decoration: none;
+}
+
+.botao::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.botao1::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.botao2::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.botao:hover::before {
+    height: 180%;
+}
+
+/*Voltar*/
+.botao-voltar-row {
+    margin-top: 80px;
+}
+
+.botao-voltar {
+    font-size: 1.7em;
+    background: none;
+    border: none;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 8px;
+    color: white;
+    transition: 0.8s;
+}
+
+.botao-voltar:hover {
+    background: white;
+    color: #040d15;
+    transition: 0.8s;
+}
+
+/*
+=== RODAPÉ ===
+*/
+footer {
+    background: #01060c;
+    width: 100%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 135px;
+    margin-bottom: 10px;
+}
+
+.rodape-empresas {
+    margin-top: 210px;
+}
