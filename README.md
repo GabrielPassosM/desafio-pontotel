@@ -8,23 +8,23 @@
 
 ### Screenshots e endpoints
 
-![index](https://user-images.githubusercontent.com/78399176/106635581-c79a2a80-655f-11eb-9c0d-0719c6f43962.jpg)
+![index](https://user-images.githubusercontent.com/78399176/107668959-0458d680-6c70-11eb-832a-8703fe671d98.png)
 
 Endpoint: '/'
 
 Página index, apresenta dois botões para navegar para os outros endpoints.
 ***
 
-![bovespa](https://user-images.githubusercontent.com/78399176/106635938-2bbcee80-6560-11eb-8407-6492929e241e.jpg)
+![bovespa](https://user-images.githubusercontent.com/78399176/107669020-13d81f80-6c70-11eb-84c7-a48eb01d4982.png)
 
 Endpoint: '/bovespa'
 
-Página que exibe os pontos bovespa.
+Página que exibe os 5 últimos pontos bovespa registrados na API.
 ***
 
-![empresas1](https://user-images.githubusercontent.com/78399176/106636247-7fc7d300-6560-11eb-8b5b-d4fa70fd1c64.jpg)
-![empresas2](https://user-images.githubusercontent.com/78399176/106636310-90784900-6560-11eb-9d3b-be2fa5749057.jpg)
+![empresas](https://user-images.githubusercontent.com/78399176/107669071-22263b80-6c70-11eb-8011-1947a1034d1d.png)
+
 
 Endpoint: '/empresas'
 
-Página que permite o usuário escolher, dentre determinadas opções, uma empresa para consultar seu valor.
+Página que permite o usuário adicionar ao seu banco de dados, dentre determinadas opções, empresas para consultar seu valor.
